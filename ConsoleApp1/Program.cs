@@ -74,33 +74,4 @@ namespace CsvToJsonApp
         private static bool? ToNullableBool(string input) =>
             bool.TryParse(input, out var result) ? result : null;
     }
-
-
-    public class AddressSearchItem
-    {
-        public string? AssessorsParcelNumber { get; set; }
-        public string? StandardizedAssessorsParcelNumber { get; set; }
-        public string? AddressLine1 { get; set; }
-        public string? AddressLine2 { get; set; }
-        public string? City { get; set; }
-        public string? State { get; set; }
-        public int? PostalCode { get; set; }
-        public int? PostalCodePlus4 { get; set; }
-        public int? AddressHouseNumber { get; set; }
-        public string? AddressPreDirection { get; set; }
-        public string? AddressStreetName { get; set; }
-        public string? AddressStreetSuffix { get; set; }
-        public string? AddressPostDirection { get; set; }
-        public string? AddressUnitType { get; set; }
-        public string? AddressUnitNumber { get; set; }
-        public int? CountyFips { get; set; }
-        public string? County { get; set; }
-        public double? Latitude { get; set; }
-        public double? Longitude { get; set; }
-        public string? CurrentOwner { get; set; }
-        public bool? OwnerOccupied { get; set; }
-        public int? ZIP1st3 { get; set; }
-        public int? ZIP1st4 { get; set; }
-        public string? FullAddress { get; set; }
-    }
 }
